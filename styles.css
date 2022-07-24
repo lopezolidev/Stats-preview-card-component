@@ -29,7 +29,7 @@ body {
 }
 
 body main {
-    height: 82vh;
+    height: 84vh;
     width: 86vw;
     border-radius: 0.5rem;
     display: flex;
@@ -54,13 +54,14 @@ main .image-container span {
     background-size: cover;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    background-color: hsl(277, 50%, 38%);
+    background-color: hsl(277, 44%, 28%);
     background-blend-mode: soft-light;
 }
 
 /* text container styles */
 
 .text-container {
+    height: 64%;
     width: 100%;
     padding: 2.8rem 2.4rem;
     display: flex;
@@ -135,14 +136,12 @@ main .image-container span {
     color: var(--Main-heading-stats-white);
     padding: 0.8rem;
     border-radius: 1rem;
+    transition: all .4s ease-in-out;
 }
 
 .attribution a:hover {
     background-color: var(--Soft-violet);
 }
 
-/* applying media queries */
 
-@media (min-width: 1440px) {
-    
-}
+
