@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --Main-heading-stats-white: hsl(0, 0%, 100%);
+    --Main-paragraph-white: hsla(0, 0%, 100%, 0.75);
+    --Stat-headings-white: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    background-color: var(--Very-dark-blue);
+}
+
+body main {
+    height: 82vh;
+    width: 86vw;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-desaturated-blue);
+}
+
+/* image styles */
+
+main .image-container {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+}
+
+main .image-container span {
+    height: 100%;
+    width: 100%;
+    background: url('./images/image-header-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: hsl(277, 50%, 38%);
+    background-blend-mode: soft-light;
+}
+
+/* text container styles */
+
+.text-container {
+    width: 100%;
+    padding: 2.8rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-container h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.text-container h1 span {
+    color: var(--Soft-violet);
+}
+
+/* main paragraph styles */
+
+.text-container .main-paragraph {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--Main-paragraph-white);
+    text-align: center;
+}
+
+/* stats section styles */
+
+.stats-section {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.stats-section .stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.stats-container h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--Main-heading-stats-white);
+}
+
+.stats-container p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--Stat-headings-white);
+}
+
+/* footer styles */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--Main-paragraph-white);
+}
+
+.attribution a {
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--Main-heading-stats-white);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.attribution a:hover {
+    background-color: var(--Soft-violet);
+}
+
+/* applying media queries */
+
+@media (min-width: 1440px) {
+    
+}
